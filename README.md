@@ -1,7 +1,9 @@
-# Barebones
-Barebones is simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg).
+# CSSkel
+CSSkel is a fork of [Barebones](https://acahir.github.io/Barebones/) by  is simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg).
 
-While there are several other active forks of Skeleton, Barebones differs by requiring no external tools or dependencies such as CSS pre-processors. Simply download and go.
+We use it a lot for small projects so we appended some basic structures missing and fixed some class names to make it meaningful but short and logic.
+
+While there are several other active forks of Skeleton, CSSkel heritage from Barebones requiring no external tools or dependencies such as CSS pre-processors. Simply download and go.
 
 ## Getting started
 
