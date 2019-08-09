@@ -1,27 +1,29 @@
 # CSSkel
-CSSkel is a fork of [Barebones](https://acahir.github.io/Barebones/) by  is simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg).
+CSSkel is a fork of [Barebones](https://acahir.github.io/Barebones/) by Steve Acahir.
+Is a simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg).
 
-We use it a lot for small projects so we appended some basic structures missing and fixed some class names to make it meaningful but short and logic.
+We start to using it for small projects so we appended some basic structures missing and fixed some class names to make it meaningful but short and logic.
 
-While there are several other active forks of Skeleton, CSSkel heritage from Barebones requiring no external tools or dependencies such as CSS pre-processors. Simply download and go.
+While there are several other active forks of Skeleton, CSSkel, as in Barebones, require no external tools or dependencies such as CSS pre-processors. Simply download and go.
 
 ## Getting started
 
 
-Barebones can be downloaded via [zip file](https://github.com/acahir/Barebones/archive/master.zip) or the repo can be cloned using `git clone https://github.com/acahir/Barebones.git`.
+CSSkel can be downloaded via [zip file](https://github.com/digitart/CSSkel/archive/master.zip) or the repo can be cloned using `git clone https://github.com/digitart/CSSkel.git`.
 
-Once you have your bare hands on Barebones, use the [documentation and examples](https://acahir.github.io/Barebones/) to get started.
+Once you have your bare hands on CSSkel, use the [documentation and examples](https://digitart.github.io/CSSkel/) to get started.
 
 
 ### What's in the download?
 
-The download includes Skeleton's CSS, [Normalize CSS](https://github.com/necolas/normalize.css/) as a reset, a sample favicon, and an index.html as a starting point. It also includes skeleton-legacy.css in case you are updating an existing site, though this stylesheet is not linked in the index.html template.
+The download includes CSSkel CSS, the minified version of CSSkel, [Normalize CSS](https://github.com/necolas/normalize.css/) as a reset, a sample favicon, and an index.html as a starting point. It also includes skeleton-legacy.css in case you are updating an existing site, though this stylesheet is not linked in the index.html template.
 
 ```
 Skeleton/
 ├── index.html
 ├── css/
-│   ├── barebones.css
+│   ├── csskel.css
+│   ├── csskel.min.css
 │   ├── normalize.css
 │   └── skeleton-legacy.css
 └── images/
@@ -29,7 +31,7 @@ Skeleton/
 
 ```
 
-## Why Barebones?
+## Why CSSkel?
 
 Building off of Skeleton's [awesomeness](https://github.com/dhg/Skeleton#why-its-awesome):
 - Updated to use CSS variables
