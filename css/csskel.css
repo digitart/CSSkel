@@ -114,7 +114,7 @@ html {
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* CSS Grid depends much more on CSS than HTML, so there is less boilerplate
-    than with skeleton. Only basic 1-4 column grids are included.
+    than with skeleton. Only basic 1-6 column grids are included.
     Any additional needs should be made using custom CSS directives */
 
 .grid-container {
