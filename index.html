@@ -1,115 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- Basic Page Needs
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <meta charset="utf-8">
-      <title>CSSkel</title>
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- Mobile Specific Metas
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- FONT
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <link rel="stylesheet" href="css/csskel.css?v=1e6845594">
-      <!-- Favicon
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <link rel="icon" type="image/png" href="images/favicon.ico">
-      <style>
-         .grid-container div {
-            background-color: #f5f5f5;
-         }
-         .grid-container{
-            grid-gap: 20px;
-         }
-      </style>
-   </head>
-   <body>
-      <!-- Primary Page Layout
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="grid-container cols:4">
-         <div>
-            <h1>H1 header</h1>
-            <h2>H2 header</h2>
-            <h3>H3 Header</h3>
-            <h4>H4 Header</h4>
-            <h5>H5 Header</h5>
-         </div>
-         <div>
-            <h4>Basic Page</h4>
-            <p class="align-left">
-               This index.html page is a placeholder with the CSS, font and favicon. 
-               It's just waiting for you to add some content! If you need some help hit 
-               up the <a href="https://acahir.github.io/Barebones/">Barebones documentation</a>.
+    <head>
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>CSSkel</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSSkel
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/csskel.css?v=1lesdkxxjr94">
+        <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <!-- Local Styles
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            .grid-container>div:hover {
+                background-color: #0000000b;
+            }
+            .grid-container{
+                grid-gap: 20px;
+            }
+            .image-footer{
+                font-size: .7em;
+                line-height: 1.3;
+                display: inline-block;
+            }
+            .docs-header {
+                 text-transform: uppercase;
+                 letter-spacing: .2rem;
+                 font-weight: 600;
+            }
+            .container{
+                 max-width: 800px;
+                 margin:0 auto;
+                 padding:0 1em;
+            }
+            .smallcode {
+                 line-height: 1.3;
+                 font-size: .8em;
+                 color: #555;
+            }
+            .grid-container.grid-example>div{
+                background-color: #00000014;
+                text-align:center;
+                font-size: .8em;
+                text-transform: uppercase;
+                font-weight:600;
+                color:#888;
+                padding: .5em 0;
+            }
+            .grid-example{
+                margin-bottom:.8em;
+            }
+            footer{
+                font-size:.8em;
+                text-align:center;
+                color:#777;
+                padding:1em;
+            }
+            .logo{
+                width:25vw;
+                margin-top:5vh;
+            }
+            .navbar{
+                box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+            }
+            .menu a{
+                font-size: .8em;
+                text-transform: uppercase;
+                border-left: 1px solid var(--navbar-hover-background);
+                font-size: 1.3rem;
+                font-weight: 600;
+                letter-spacing: .15rem;
+                padding: 20px 20px;
+            }
+            .navbar .navbar-logo{
+                padding: 4px 20px;
+            }
+            .anchor{
+                height:80px;
+            }
+            @media(min-width:900px){
+                .container{
+                    padding:0;
+                }
+            }
+            @media(max-width:900px){
+                .hide-in-mobile{
+                    display:none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top" class="anchor"></div>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#top" class="navbar-logo">
+                    <strong>CSS</strong>kel
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <div class="menu">
+                    <a href="#work">In Action</a>
+                    <a href="#usage">Usage</a>
+                    <a href="#themes">Themes</a>
+                    <a href="#grids">Grid</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container align-center">
+            <img src="images/logo.svg" class="logo">
+            <h1 class="mb:0"><big><strong>CSS</strong>kel</big></h1>
+            <small  id="work">A light CSS boilerplate</small>
+        </div>
+        <hr>
+        <div class="grid-container cols:4">
+            <div>
+                <h3>What is this?</h3>
+                <p>
+                    <strong>CSS</strong>kel is a light CSS boilerplate using most updated CSS standards and 
+                    resources including grids and variables packaged in a light 12k standard css stylesheet.
+                </p>
+                <p>
+                    No need of pre-processors, nor javascripts. Pure CSS to get a basic start 
+                    your web projects.
+                </p>
+                <p>
+                    It's based on <a href="http://getskeleton.com/" target="_new">Skeleton</a> and 
+                    <a href="https://acahir.github.io/Barebones/" target="_new">Barebones</a> and inherits
+                    their approach to be a lighter css starting point rather han a fully loaded UI framework,
+                    ready to start your building process with enought resources to be practical, but also with
+                    enought freedom to stop looking like everybody else.
+                </p>
+            </div>
+            <div>
+                <h4>Is this for you?</h4>
+                <p class="align-left">
+                   If you design websites or projects from the ground you know how dirty your code may end up using the "hacks"
+                   of full flaged frameworks out there. 
+                </p>
+                <p>
+                    After 200 or 300 lines full of <em>"col-md-6 offset-md-3 mt-20"</em> your code start to be
+                    unmeaningful and reiterative, full of extra &lt;divs&gt; only required to set how your page looks.<br>
+                    More than trying a better separation between html code and look &amp; feel, <strong>CSS</strong>kel tries to get rid of such unnecesary markdown 
+                    just because a cleaner code is easier to mantain... and faster!
+                </p>
+                <p>
+                    So why don't you sniff a little in the code of this page? If you like what you see, maybe <strong>CSS</strong>kel is right
+                    for you.
+                </p>
+            </div>
+            <div class="colspan:2 nopadding">
+                <h4>3 cols and an image</h4>
+                <img src="https://source.unsplash.com/random/600x300" class="full-width">
+                <div class="system-font image-footer mx:3">This column use the class <code>nopadding</code> to let the responsive image 
+                to render without margins in mobile devices, allowing to use it's full width screen as any native app does. (Image
+                provided by <a href="unsplash.com" target="_new">unsplash.com</a>)</div>
+                <p>
+                    CSS is now more powerfull than ever, reducing dependency on javascript for responsive tasks as nav menus or column 
+                    re-organization at different resolutions. <strong>CSS</strong>kel does not require but a simple link to a css file to do
+                    all its job, as you can see in this page.
+                </p>
+                <p>
+                    With the CSS grid model, you can finaly get rid of the 12 column model that makes a lot of projects look the same nowadays.
+                </p>
+                <p>
+                    The good news is that you can use <strong>CSS</strong>skel without having to get deep inside vars of full grid model, as a satarting point
+                    or for a full production project.
+                </p>
+            </div>
+            <div>
+                <p class="hide-in-mobile">
+                    <button>Default buttons</button>
+                    <button class="button-primary">Primary buttons</button>
+                </p>
+                <p class="system-font">
+                    This is a paragraph that uses <code>system-font</code> class, aimed to user interfaces
+                    and technical documentation. It renders flawlessly using the device's font.
+                </p>
+                <p class="system-font">
+                    Use it in a single paragraph, on a section or in the <code>body</code> tag for the entire document 
+                    if you are desingning an admin template.
+                </p>
+            </div>
+            <div>
+                <h5>Main objetives</h5>
+                <ul>
+                    <li>Build using CSS Grid for more flexility than 12-column layout.</li>
+                    <li>Simple theming using CSS Variables</li>
+                    <li>Ready for upcoming drafts </li>
+                    <li>Preserve original skeleton objetives:
+                        <ul>
+                            <li>Light as a feather</li>
+                            <li>Not a UI framework but a starting point</li>
+                            <li>Zero compiling or installing necessary.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Tables</h5>
+                <p>
+                    This is an example of stylizing tables visible on desktops
+                </p>
+                <table class="system-font hide-in-mobile">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dave Gamache</td>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>San Francisco</td>
+                        </tr>
+                        <tr>
+                            <td>Dwayne Johnson</td>
+                            <td>42</td>
+                            <td>Male</td>
+                            <td>Hayward</td>
+                        </tr>
+                    </tbody>
+                </table>
+                Look Ma! no classes here in tables! Just plain html.
+            </div>
+            <div>
+                <h4>Interesting links</h4>
+                A few scripts that you can use if you miss Bootstrap functionality and scripts:<br>
+                <a href="https://os.alfajango.com/easytabs/" target="_new">EasyTabs</a> 
+                Tabs that you can stilize at will with CSS<br>
+                <a href="https://www.dynatable.com/?queries%5Bsearch%5D=col#event-hooks" target="_new">Dynatable</a> 
+                Searchable and sortable tables<br>
+                <a href="https://github.com/voronianski/jquery.avgrund.js">AVGRUND</a> for modals and alerts.<br>
+                <a href="https://datatables.net/download/">DATATABLES</a> advanced interaction controls to your HTML tables.
+            </div> 
+        </div>
+        <div id="usage" class="anchor"></div>
+        <div class="container">
+            <h6 class="docs-header">Usage</h6>
+            <p>You can download CSSkel from <a href0"https://github.com/digitart/CSSkel" target="_blank">Github</a> or link it directly with:</p>
+            <pre><code>
+&lt;link rel="stylesheet" href="//csskel.com/1.0.0/csskel.min.css"&gt;
+            </code></pre>
+            <p class="mt:2">Yup. Thats all! That's the point. A single simple link and you're done! <small>(CDN kindly donated by Cloudflare)</small></p>
+        </div>
+        <div id="themes" class="anchor"></div>
+        <div class="container">
+            <h6 class="docs-header">Themes</h6>
+            <p>
+                This is a very interesting and powerfull concept. You can change the entire theme of your layout just by
+                adding your own :root variables after loading csskel.css. Without any preprocessor like SASS or LESS you can just re-redefine the variables
+                related to colors and shades wthout ever touching the rest of the css code.
+            </p>
+            <p>
+                The default theme maintains the color choices from Skeleton, although  a few very similar colors were consolidated. 
+                Colors are based from a theme hue, which defines the <code>normal</code> text color. 
+                Additional <code>richer</code> and <code>softer</code> text colors are then defined.
+            </p>
+            <p>
+                The choice of those keywords is to prevent confusion with light vs dark themes. For example. in a light background 
+                theme, <code>softer</code> would mean a lighter color than <code>normal</code>, ie less contrast with the background, 
+                but if the base hue is dark, <code>softer</code> would be darker to decrease the contrast.
+            </p>
+            <p>
+                You can design the colors you want in your theme using any 
+                <a href="https://www.w3schools.com/colors/colors_hsl.asp" target="_blank">HSL Calculator</a> online.
+            </p>
+            <pre>
+                <code class="smallcode">
+:root {
+    /* default theme: light background, dark text, blue accent */
+    --theme-hue: 0;             /* From 0 to 360 0=red but depends on theme-light to reveal the color*/
+    --theme-light: 0%;          /* make it 40% to make hue color subtile visible, keep it 0 for black-gray colors*/
+    --accent-hue: 194;          /* blue */
+
+    --text-color-richer: hsl(var(--theme-hue),var(--theme-light), 5%);      /* #0d0d0d	*/
+    --text-color-normal: hsl(var(--theme-hue),var(--theme-light), 13%);     /* #222222 	text color; button:hover:focus color */
+    --text-color-softer: hsl(var(--theme-hue),var(--theme-light), 33%);     /* #555555 	button color; button:hover border */
+
+    --background-color: white;                              /* transparent body background; textarea,select background */
+
+    --button-primary-color: white;
+
+}
+                </code>
+            </pre>
+        </div>
+        
+        <div id="grids" class="anchor"></div>
+        <div class="container">
+            <h6 class="docs-header">Grids</h6>
+            <p><strong>CSSkel</strong> is a fork of a fork (<em>[skeleton]->[barebones]->[CSSkel]</em>), so it shares the "old" concept
+                of "columns" but now using the flexible <strong>grids</strong> css structure, now fully soported by almost any browser.</p>
+            <p>While <a href="https://acahir.github.io/Barebones/" target="_new">barebones</a> do an excelent job implementing column divisions of rows, 
+                <strong>CSSkel</strong> added the concept of
+                column spans much in the way we used to span columns back in the old days of tables used for layouts.</p>
+            <p>
+                It might sound as a step back in the grids model at first, but the logic is this: If you need a complex responsive grid 
+                structure please forget of <strong>any</strong> framework or boilerplate (including this one) and do it directly with native css's grids coding. 
+                You can use excelent tools as <a href="https://grid.layoutit.com/">Layoutit's grid generator</a> to create the barebone
+                skeleton of your design and then use <strong>CSSkel</strong> as a set of helper classes.
+            </p>
+            <p>This is how easy and fast you can create a 3 column model:</p>
+            <p>
+                <code>&lt;div class="grid-container"></code> defaults as 3 columns grid:
             </p>
             
-            <p>This is a second paragraph to see if it fits and if it is easy to read. 
-            Maybe on mobiles we need amor bigger font</p>
-         </div>
-         <div class="colspan:2 nopadding">
-            <h4>3 cols and an image</h4>
-            <img src="https://source.unsplash.com/random/800x400" class="full-width">
-            <small>And a responsive image!</small>
-         </div>
-         <div>
-            <p>
-               <a href="#" class="button">Default button</a>
-               <a href="#" class="button button-primary">Primary buttobn</a>
+            <div class="grid-container grid-example">
+                <div>Uno</div>
+                <div>Dos</div>
+                <div>Tres</div>
+            </div>
+            <p class="mt:3">
+                You can modify the number of columns using <code>cols:x</code> class, beign x a value from 2 to 6 columns.<br>
+                Using more than 6 columns isn't usable at all in terms of web design so you can finaly get rid of the 12 column
+                model we set back in the old days of <a href="http://blueprintcss.org/" target="_new">Blueprint CSS</a>.
+                In those days we defined a 24 invisible "columns" as a positioning grid for layers and someone simplifyed 
+                the model to 12 visible columns for upcoming frameworks.<br>
+                Anyhow, such column numbers where used to fine-tune widths and positions of real visible columns and elements
+                but never was the intention to use a 1/24 column nor even a 1/12 column on real desings.
             </p>
-         </div>
-         <div>
-            <h5>Listas</h5>
-            <ul>
-               <li>Un item</li>
-               <li>Dos Items</li>
-               <li>Tres items
-                  <ul>
-                     <li>Subitem</li>
-                     <li>Subitem2</li>
-                  </ul>
-               </li>
-            </ul>
-         </div>
-         <div>
-            <table class="full-width">
-               <thead>
-                  <tr>
-                     <th>Name</th>
-                     <th>Age</th>
-                     <th>Sex</th>
-                     <th>Location</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>Dave Gamache</td>
-                     <td>26</td>
-                     <td>Male</td>
-                     <td>San Francisco</td>
-                  </tr>
-                  <tr>
-                     <td>Dwayne Johnson</td>
-                     <td>42</td>
-                     <td>Male</td>
-                     <td>Hayward</td>
-                  </tr>
-              </tbody>
-            </table>
-         </div>
-         <div>
-            <h4>Interesting links</h4>
-            A few scripts that you can use if you miss Bootstrap functionality and scripts:<br>
-            <a href="https://os.alfajango.com/easytabs/" target="_new">EasyTabs</a> 
-            Tabs that you can stilize at will with CSS<br>
-            <a href="https://www.dynatable.com/?queries%5Bsearch%5D=col#event-hooks" target="_new">Dynatable</a> 
-            Searchable and sortable tables<br>
-            <a href="https://github.com/voronianski/jquery.avgrund.js">AVGRUND</a> for modals and alerts.<br>
-            <a href="https://datatables.net/download/">DATATABLES</a> advanced interaction controls to your HTML tables.
-         </div> 
-      </div>
-      <!-- End Document
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   </body>
+            <p class="mb:2">
+                So, to get 5 columns with <strong>CSSkel</strong> you can simply use: 
+                <code>class="grid-container cols:5"</code>. 
+                Notice how dificult would it be to have such division on any "12/24 cols" based framework.
+            </p>
+            <div class="grid-container grid-example cols:5">
+                <div>uno</div>
+                <div>dos</div>
+                <div>tres</div>
+                <div>cuatro</div>
+                <div>cinco</div>
+            </div>
+            <p class="mt:3 mb:0">
+                Notice also the clean html code you need to get the effect; just a wraping
+                div with <code>grid-container</code> class and the next child divs will be rendered as columns without any further classes:
+            </p>
+                <pre class="my:0">
+                <code>
+       &lt;div class="grid-container cols:5">
+           &lt;div>Uno&lt;/div>
+           &lt;div>Dos&lt;/div>
+           &lt;div>Tres&lt;/div>
+           &lt;div>Cuatro&lt;/div>
+           &lt;div>Cinco&lt;/div>
+       &lt;/div>
+                </code>
+            </pre>
+            <p>Whenever you overflow the number of columns defined in the wrapping div, extra columns will 
+                simply be acomodated below in a new row preserving structure</p>
+            <div class="grid-container grid-example cols:5">
+                <div>div one</div>
+                <div>div two</div>
+                <div>div three</div>
+                <div>div four</div>
+                <div>div five</div>
+                <div>div six</div>
+                <div>div seven</div>
+                <div>div eight</div>
+            </div>
+
+            <p>This are all the possible column divisions in <strong>CSSkel</strong> using <code>cols:6</code> <code>cols:5</code>
+                <code>cols:4</code> <code>cols:3</code> or<code>cols:2</code>.
+            </p>
+            <div class="grid-container cols:6 grid-example">
+                <div>six</div>
+                <div>six</div>
+                <div>six</div>
+                <div>six</div>
+                <div>six</div>
+                <div>six</div>
+            </div>
+            <div class="grid-container cols:5 grid-example">
+                <div>five</div>
+                <div>five</div>
+                <div>five</div>
+                <div>five</div>
+                <div>five</div>
+            </div>
+            <div class="grid-container cols:4 grid-example">
+                <div>four</div>
+                <div>four</div>
+                <div>four</div>
+                <div>four</div>
+            </div>
+            <div class="grid-container cols:3 grid-example">
+                <div>three</div>
+                <div>three</div>
+                <div>three</div>
+            </div>
+            <div class="grid-container cols:2 grid-example">
+                <div>two</div>
+                <div>two</div>
+            </div>
+            <p class="mt:4 mb:0">
+                <sstrong>CSSkel</sstrong> can help you make more interesting column sets using column spans. Use <code>colspan:2</code>
+                <code>colspan:3</code> <code>colspan:4</code> or <code>colspan:5</code> classes in the div/col you want to start the spanning.
+            </p>
+            <pre class="my:0">
+                <code>
+       &lt;div class="grid-container cols:6">
+           &lt;div class="colspan:3">six x 3&lt;/div>
+           &lt;div>six&lt;/div>
+           &lt;div>six&lt;/div>
+           &lt;div>six&lt;/div>
+       &lt;/div>
+                </code>
+            </pre>
+            <div class="grid-container cols:6 grid-example system-font">
+            <div class="colspan:3">class="colspan:3"</div>
+                <div>six</div>
+                <div>six</div>
+                <div>six</div>
+            </div>
+            <div class="grid-container cols:4 grid-example system-font">
+                <div>four</div>
+                <div class="colspan:3">class="colspan:3"</div>
+            </div>
+            <div class="grid-container cols:4 grid-example system-font">
+                <div>four</div>
+                <div>four</div>
+                <div class="colspan:2">class="colspan:2"</div>
+            </div>
+                <div class="grid-container cols:5 grid-example system-font">
+                    <div>five</div>
+                    <div class="colspan:3">class="colspan:3"</div>
+                <div>five</div>
+            </div>
+        </div>
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <footer>
+            &copy; 2019 Digitart, Aleks Vas
+        </footer>
+    </body>
 </html>
 
