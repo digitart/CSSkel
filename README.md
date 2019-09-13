@@ -11,7 +11,8 @@ You can simply link to it using
 ```
 <link rel="stylesheet" href="//csskel.com/1.0.0/csskel.min.css">
 ```
-becasue the whole point is being easy to start with. No other dependency, jasvascript or preprocessor required. *CDN kindly donated by Cloudflare*.
+becasue the whole point is being easy to start with CSSkel.
+No other dependency, jasvascript or preprocessor required. *CDN kindly donated by Cloudflare*.
 
 CSSkel can be downloaded via [zip file](https://github.com/digitart/CSSkel/archive/master.zip) or the repo can be cloned using `git clone https://github.com/digitart/CSSkel.git`.
 
