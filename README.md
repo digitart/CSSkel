@@ -1,5 +1,5 @@
 # CSSkel
-CSSkel is a simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg)and a fork of [Barebones](https://acahir.github.io/Barebones/) by Steve Acahir.
+CSSkel is a simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg) and a fork of [Barebones](https://acahir.github.io/Barebones/) by Steve Acahir.
 
 We start using Barebones for small but serious projects so we have to appended some basic structures missing and fixed some class names to make it meaningful (to us) but short and logic.
 
