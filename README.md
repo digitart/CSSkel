@@ -2,13 +2,13 @@
 CSSkel is a fork of [Barebones](https://acahir.github.io/Barebones/) by Steve Acahir.
 Is a simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg).
 
-We start to using it for small projects so we appended some basic structures missing and fixed some class names to make it meaningful but short and logic.
+We start using it for small but serious projects so we have to appended some basic structures missing and fixed some class names to make it meaningful but short and logic.
 
-While there are several other active forks of Skeleton, CSSkel, as in Barebones, require no external tools or dependencies such as CSS pre-processors. Simply download and go.
+While there are several other active forks of Skeleton, CSSkel, as in Barebones, require no external tools or dependencies such as CSS pre-processors. Simply download (or link) and go.
 
 ## Getting started
 
-You can simply link it using https:/ccskel.com/1.0.0/csskel.min.css becasue the whole point is to have it easy to start with. No other dependency required.
+You can simply link to it using https:/ccskel.com/1.0.0/csskel.min.css becasue the whole point is to have it easy to start with. No other dependency, jasvascript or preprocessor required.
 
 CSSkel can be downloaded via [zip file](https://github.com/digitart/CSSkel/archive/master.zip) or the repo can be cloned using `git clone https://github.com/digitart/CSSkel.git`.
 
