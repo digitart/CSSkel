@@ -8,6 +8,7 @@ While there are several other active forks of Skeleton, CSSkel, as in Barebones,
 
 ## Getting started
 
+You can simply link it using https:/ccskel.com/1.0.0/csskel.min.css becasue the whole point is to have it easy to start with. No other dependency required.
 
 CSSkel can be downloaded via [zip file](https://github.com/digitart/CSSkel/archive/master.zip) or the repo can be cloned using `git clone https://github.com/digitart/CSSkel.git`.
 
@@ -34,10 +35,9 @@ Skeleton/
 ## Why CSSkel?
 
 Building off of Skeleton's [awesomeness](https://github.com/dhg/Skeleton#why-its-awesome):
-- Updated to use CSS variables
+- Updated to use CSS variables - No pre processor required but you can theme it just setting a few variables
 - Uses CSS Grid to replace 12-column grid system
 - Updated normalize to current version (3.0.2 -> 8.0.1)
-- Maintains backwards compatibility with Skeleton
 
 Additional features planned and possible:
 - Support for @media prefers-color-scheme (aka Dark Mode)
@@ -50,21 +50,20 @@ Additional features planned and possible:
     
 
 
-
 ## Browser support
 
 Barebones does make use of modern CSS features, but the base functionality is well supported.
 
-- CSS Grid: [88% global browser support](https://caniuse.com/#feat=css-grid)
-- CSS Variables: [87% global browser support](https://caniuse.com/#feat=css-variables)
+- CSS Grid: [88% global browser support](https://caniuse.com/#feat=css-grid) and raising.
+- CSS Variables: [87% global browser support](https://caniuse.com/#feat=css-variables) and raising.
 
 The most notable missing support for both features is from IE 11 or earlier. That's probably the browser that your decision will depend on.
 
-Barebones includes a few experimental features that are not yet widely supported. If not supported, the brower will simply ignore those directives:
+CSSkel includes a few experimental features inherited from Barebones that are not yet widely supported. If not supported, the brower will simply ignore those directives:
 - prefers-color-scheme media query: Only currently available in Safari Technology Preview
 - scroll-behavior: Chrome, Firefox
-- CSS env(): Nothing included in Barebones, but media queries were structured in such as way to make use of env() variables in the future
-Both of these features can be achived using other methods. In fact, both are implemented using css and vanilla javascript on the [Barebones documentation page](https://acahir.github.io/Barebones/) in ~50 lines of code. In the future these may be added to Barebones as "extensions".
+- CSS env(): Nothing included in CSSkel, but media queries were structured in such as way to make use of env() variables in the future
+Both of these features can be achived using other methods. In the future these may be added to CSSkel as "extensions".
 
 #### External dependencies
 
@@ -73,13 +72,13 @@ Both of these features can be achived using other methods. In fact, both are imp
 
 ## Acknowledgements
 
-Barebones is build upon the great work of the Skeleton project by [Dave Gamache](https://twitter.com/dhg). It wouldn't be possible without him, and Barebones only exists because Skeleton is no longer being maintained.
+CSSkel is build upon the great work of the Skeleton project by [Dave Gamache](https://twitter.com/dhg) and Barebones by Steve Acahir. It wouldn't be possible without them. CSSkel oexists because Skeleton is no longer being maintained and Barebones still inherit the use of "rows" and "exesive-verbose-classes-on-every-div" that IMHO are no longer required in modern HTML design.
 
-The [documentation page](https://acahir.github.io/Barebones/) makes use of icons by [FontAwesome](https://fontawesome.com), [smoothscroll](https://github.com/iamdustan/smoothscroll) by [Dustan Kasten](https://github.com/iamdustan), [Google Prettify](https://code.google.com/p/google-code-prettify/), and other great tidbits shared by many.
+The [documentation page](https://csskel.com/) makes use of icons by [FontAwesome](https://fontawesome.com), [native css smooth scroll](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior), and other great tidbits shared by many.
 
 
 ## License
 
-All parts of Barebones are free to use and abuse under the MIT license.
+All parts of CSSkel are free to use and abuse under the MIT license.
 
 
