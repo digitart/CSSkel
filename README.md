@@ -9,7 +9,7 @@ While there are several other active forks of Skeleton, CSSkel, as in Barebones,
 
 You can simply link to it using
 ```
-<link rel="stylesheet" href="//csskel.com/1.0.0/csskel.min.css">
+<link rel="stylesheet" href="//csskel.com/1.0.2/csskel.min.css">
 ```
 becasue the whole point is being easy to start with CSSkel.
 No other dependency, jasvascript or preprocessor required. *CDN kindly donated by Cloudflare*.
