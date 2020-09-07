@@ -191,7 +191,32 @@
         grid-column-end: span 5;
     }
 }
-
+@media (min-width: 1200px){
+    .grid-container.cols\:10 {
+        grid-template-columns: repeat(10, 1fr);
+    }
+    .grid-container.cols\:9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .grid-container.cols\:8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .grid-container.cols\:7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .grid-container .colspan\:6{
+        grid-column-end: span 6;
+    }
+    .grid-container .colspan\:7{
+        grid-column-end: span 7;
+    }
+    .grid-container .colspan\:8{
+        grid-column-end: span 8;
+    }
+    .grid-container .colspan\:9{
+        grid-column-end: span 9;
+    }
+}
 
 /* Base Styles
 -------------------------------------------------- */
